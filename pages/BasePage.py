@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from additionals.ConfigParserHelper import ConfigParserHelper
+from config_parser.ConfigParserHelper import ConfigParserHelper
 
 
 class BasePage:
