@@ -1,12 +1,12 @@
-from configparser import ConfigParser
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+from additionals.ConfigParserHelper import ConfigParserHelper
 
 
 class BasePage:
-    cfg = ConfigParser()
-    cfg.read('config\\config.ini')
-    base_url = cfg.get('application_env', 'url')
+    cfg = ConfigParserHelper()
+    base_url = cfg.getData('application_env', 'url')
 
     def __init__(self, driver, url=base_url):
         self.url = url
