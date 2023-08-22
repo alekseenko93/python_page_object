@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-from additionals.ConfigParserHelper import ConfigParserHelper
+from config_parser.ConfigParserHelper import ConfigParserHelper
 from pages.GithubLoginPage import GithubLoginHelper as LoginHelper
 
 
