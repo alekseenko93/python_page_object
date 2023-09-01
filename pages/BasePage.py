@@ -22,3 +22,6 @@ class BasePage:
 
     def visit(self):
         return self.driver.get(self.url)
+
+    def get_current_url(self):
+        return self.driver.current_url
